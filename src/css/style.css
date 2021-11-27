@@ -48,6 +48,10 @@ body {
   background: var(--bg);
 }
 
+section {
+  padding: 2rem 7%;
+}
+
 .btn {
   margin-top: 1rem;
   display: inline-block;
@@ -204,6 +208,37 @@ body {
   width: 100%;
   text-align: center;
 }
+
+/* ========== MAIN ========== */
+/* __________ HOME __________ */
+.main .home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url('../img/home-img.jpeg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main .home .content {
+  max-width: 60rem;
+}
+
+.main .home .content h3 {
+  font-size: 6rem;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+.main .home .content p {
+  font-size: 1rem;
+  font-weight: lighter;
+  line-height: 1.8;
+  padding: 1rem 0;
+  color: #eee;
+}
+/* ========== FOOTER ========== */
+
 /* ========== RESPOSIVE ========== */
 /* media screen 1024px descktop */
 @media screen and (max-width: 1024px) {
@@ -214,10 +249,14 @@ body {
   .header {
     padding: 1.5rem 2rem;
   }
+
+  section {
+    padding: 2rem;
+  }
 }
 
 /* media screen 768px tablet */
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   #menu-btn {
     display: inline-block;
   }
@@ -246,6 +285,20 @@ body {
   .header .search-form {
     width: 90%;
     right: 2rem;
+  }
+
+  .main .home {
+    background-position: left;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .main .home .content h3 {
+    font-size: 4.5rem;
+  }
+
+  .main .home .content p {
+    font-size: 1.5rem;
   }
 }
 /* media screen 425px smathphone */
