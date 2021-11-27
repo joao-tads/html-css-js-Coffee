@@ -4,7 +4,7 @@
 /* ========== ROOT ========== */
 :root {
   --main-color: #d3ad7f;
-  --balck: #13131a;
+  --black: #13131a;
   --bg: #010103;
   --text: #ffffff;
   --border: 0.1rem solid rgba(255, 255, 255, 0.3);
@@ -20,7 +20,7 @@
   border: none;
   text-decoration: none;
   text-transform: capitalize;
-  transition: 0.3s linear;
+  transition: 0.2s linear;
 }
 
 /* ========== BASE ========== */
@@ -47,6 +47,21 @@ html::-webkit-scrollbar-thumb {
 body {
   background: var(--bg);
 }
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.7rem 3rem;
+  font-size: 1.9rem;
+  color: var(--text);
+  background: var(--main-color);
+  cursor: pointer;
+}
+
+.btn:hover {
+  letter-spacing: 0.2rem;
+}
+
 /* ========== HEADER ========== */
 .header {
   background: var(--bg);
@@ -66,4 +81,176 @@ body {
   height: 6rem;
 }
 
-/* ========== IMPORTS ========== */
+.header .navbar a {
+  margin: 0 1rem;
+  font-size: 1.6rem;
+  color: var(--text);
+}
+
+.header .navbar a:hover {
+  color: var(--main-color);
+  border-bottom: 0.1rem solid var(--main-color);
+  padding-bottom: 0.5rem;
+}
+
+.header .icons {
+  display: flex;
+  color: var(--text);
+  cursor: pointer;
+  font-size: 2.5rem;
+}
+
+.header .icons svg {
+  margin-left: 2rem;
+}
+
+.header .icons svg:hover {
+  color: var(--main-color);
+}
+
+#menu-btn {
+  display: none;
+}
+
+/* ---------- SEARCH-FORM ---------- */
+.header .search-form {
+  position: absolute;
+  top: 115%;
+  right: 7%;
+  background: var(--text);
+  width: 50rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  transform: scaleY(0);
+  transform-origin: top;
+}
+
+.header .search-form.active {
+  transform: scaleY(1);
+}
+
+.header .search-form input {
+  width: 100%;
+  height: 100%;
+  font-size: 1.6rem;
+  color: var(--black);
+  padding: 1rem;
+  text-transform: none;
+}
+
+.header .search-form svg {
+  cursor: pointer;
+  font-size: 2.2rem;
+  margin-right: 1.5rem;
+  color: var(--black);
+}
+
+.header .search-form svg:hover {
+  color: var(--main-color);
+}
+
+/* ---------- CARTS-ITEMS ---------- */
+.header .cart-items-content {
+  position: absolute;
+  top: 100%;
+  right: -100%;
+  height: calc(100vh - 9.5rem);
+  width: 35rem;
+  background: var(--text);
+  padding: 0 1.5rem;
+}
+
+.header .cart-items-content.active {
+  right: 0;
+}
+
+.header .cart-items-content .cart-item {
+  position: relative;
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.header .cart-items-content .cart-item .fa-times {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--black);
+}
+
+.header .cart-items-content .cart-item .fa-times:hover {
+  color: var(--main-color);
+}
+
+.header .cart-items-content .cart-item img {
+  height: 7rem;
+}
+
+.header .cart-items-content .cart-item .content h3 {
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.header .cart-items-content .cart-item .content .price {
+  font-size: 1.5rem;
+  color: var(--main-color);
+}
+
+.header .cart-items-content .btn {
+  width: 100%;
+  text-align: center;
+}
+/* ========== RESPOSIVE ========== */
+/* media screen 1024px descktop */
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 1.5rem 2rem;
+  }
+}
+
+/* media screen 768px tablet */
+@media screen and (max-width: 720px) {
+  #menu-btn {
+    display: inline-block;
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background: var(--text);
+    width: 30rem;
+    height: calc(100vh - 9.5rem);
+  }
+
+  .header .navbar.active {
+    right: 0;
+  }
+
+  .header .navbar a {
+    color: var(--black);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .header .search-form {
+    width: 90%;
+    right: 2rem;
+  }
+}
+/* media screen 425px smathphone */
+@media screen and (max-width: 425px) {
+  html {
+    font-size: 50%;
+  }
+}
