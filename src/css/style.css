@@ -287,46 +287,52 @@ section {
 }
 
 /* __________ ABOUT __________ */
-.main .menu .box-container {
+.menu .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 1.5rem;
 }
 
-.main .menu .box-container .box {
+.menu .box-container .box {
   padding: 5rem;
   text-align: center;
   border: var(--border);
 }
 
-.main .menu .box-container .box img {
+.menu .box-container .box img {
   height: 10rem;
 }
 
-.main .menu .box-container .box h3 {
-  color: var(--text);
+.menu .box-container .box h3 {
+  color: #fff;
   font-size: 2rem;
   padding: 1rem 0;
 }
 
-.main .menu .box-container .box .price {
-  color: var(--text);
+.menu .box-container .box .price {
+  color: #fff;
   font-size: 2.5rem;
   padding: 0.5rem 0;
 }
 
-.main .menu .box-container .box .price span {
-  color: var(--text);
+.menu .box-container .box .price span {
   font-size: 1.5rem;
   text-decoration: line-through;
+  font-weight: lighter;
 }
 
-.main .menu .box-container .box:hover {
-  background: var(--text);
+.menu .box-container .box:hover {
+  background: #fff;
 }
 
-.main .menu .box-container .box:hover > * {
-  background: var(--black);
+.menu .box-container .box:hover > * {
+  color: var(--black);
+}
+
+.products .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
 }
 /* ========== FOOTER ========== */
 
