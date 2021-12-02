@@ -428,6 +428,111 @@ section {
   font-size: 2rem;
   color: var(--main-color);
 }
+
+/* __________ CONTACT __________ */
+.contact .row {
+  display: flex;
+  background-color: var(--black);
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.contact .row .map {
+  flex: 1 1 45rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.contact .row form {
+  flex: 1 1 45rem;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.contact .row form h3 {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  color: #fff;
+}
+
+.contact .row form .inputBox {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+  background-color: var(--bg);
+  border: var(--border);
+}
+
+.contact .row form .inputBox svg {
+  width: 2rem;
+  height: 2rem;
+  color: #fff;
+  margin-left: 2rem;
+}
+
+.contact .row form .inputBox input {
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.7rem;
+  color: #fff;
+  text-transform: none;
+  background: none;
+}
+
+/* __________ BLOGS __________ */
+.blogs .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.blogs .box-container .box {
+  border: var(--border);
+}
+
+.blogs .box-container .box .image {
+  height: 25rem;
+  overflow: hidden;
+  width: 100%;
+}
+
+.blogs .box-container .box .image img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.blogs .box-container .box:hover .image img {
+  transform: scale(1.2, 1.2);
+}
+
+.blogs .box-container .box .content {
+  padding: 2rem;
+}
+
+.blogs .box-container .box .content .title {
+  font-size: 2.5rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.blogs .box-container .box .content .title:hover {
+  color: var(--main-color);
+}
+
+.blogs .box-container .box .content span {
+  color: var(--main-color);
+  display: block;
+  font-size: 2rem;
+  padding-top: 1rem;
+}
+
+.blogs .box-container .box .content p {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  color: #ccc;
+  padding: 1rem 0;
+}
 /* ========== FOOTER ========== */
 /* __________ PRODUCTS __________ */
 /* ========== RESPOSIVE ========== */
