@@ -51,6 +51,7 @@ body {
 
 section {
   padding: 2rem 7%;
+  margin-bottom: 5rem;
 }
 
 .btn {
@@ -534,7 +535,66 @@ section {
   padding: 1rem 0;
 }
 /* ========== FOOTER ========== */
-/* __________ PRODUCTS __________ */
+.footer {
+  background-color: var(--black);
+  text-align: center;
+}
+
+.footer .share {
+  padding: 1rem 0;
+}
+
+.footer .share svg {
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  padding: 1rem;
+  font-size: 2rem;
+  color: #fff;
+  border: var(--border);
+  margin: 3rem 1rem;
+  border-radius: 50%;
+}
+
+.footer .share svg:hover {
+  background-color: var(--main-color);
+}
+
+.footer .links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  gap: 1rem;
+}
+
+.footer .links a {
+  padding: 0.7rem 2rem;
+  color: #fff;
+  border: var(--border);
+  font-size: 2rem;
+}
+
+.footer .links a:hover {
+  background-color: var(--main-color);
+}
+
+.footer .credit {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: lighter;
+  padding: 2rem 0;
+}
+
+.footer .credit span {
+  color: var(--main-color);
+}
+
+.footer .credit p {
+  margin-top: 1rem;
+  font-style: italic;
+}
+
 /* ========== RESPOSIVE ========== */
 /* media screen 1024px descktop */
 @media screen and (max-width: 1024px) {
