@@ -286,7 +286,7 @@ section {
   text-align: justify;
 }
 
-/* __________ ABOUT __________ */
+/* __________ MENU __________ */
 .menu .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -329,13 +329,107 @@ section {
   color: var(--black);
 }
 
+/* __________ PRODUCTS __________ */
 .products .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 1.5rem;
 }
-/* ========== FOOTER ========== */
 
+.products .box-container .box {
+  text-align: center;
+  border: var(--border);
+  padding: 2rem;
+}
+
+.products .box-container .box .icons svg {
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  padding: 1rem;
+  border: var(--border);
+  color: #fff;
+  margin: 0.3rem;
+}
+
+.products .box-container .box .icons svg:hover {
+  background: var(--main-color);
+}
+
+.products .box-container .box .image {
+  padding: 2.5rem 0;
+}
+
+.products .box-container .box .image img {
+  height: 25rem;
+}
+
+.products .box-container .box .content h3 {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.products .box-container .box .content .stars {
+  padding: 2.5rem;
+}
+
+.products .box-container .box .content svg {
+  font-size: 2rem;
+  color: var(--main-color);
+}
+
+.products .box-container .box .content .price {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.products .box-container .box .content span {
+  text-decoration: line-through;
+  font-weight: lighter;
+  font-size: 1.5rem;
+}
+
+/* __________ REVIEW __________ */
+.review .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.review .box-container .box {
+  border: var(--border);
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.review .box-container .box p {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  color: #ccc;
+  padding: 2rem 0;
+  text-align: justify;
+}
+
+.review .box-container .box .user {
+  height: 12rem;
+  width: 12rem;
+  border: 5px outset var(--main-color);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.review .box-container .box h3 {
+  padding: 1rem 0;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.review .box-container .box .stars svg {
+  font-size: 2rem;
+  color: var(--main-color);
+}
+/* ========== FOOTER ========== */
+/* __________ PRODUCTS __________ */
 /* ========== RESPOSIVE ========== */
 /* media screen 1024px descktop */
 @media screen and (max-width: 1024px) {
